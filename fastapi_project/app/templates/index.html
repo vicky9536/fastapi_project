@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LangChain File Search</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>LangChain File Search</h1>
+
+    <!-- Upload File Form -->
+    <h2>Upload Documents</h2>
+    <form action="/upload/" method="post" enctype="multipart/form-data">
+        <input type="file" name="files" multiple required>
+        <button type="submit">Upload</button>
+    </form>
+
+    <!-- Search Form -->
+    <h2>Search Documents</h2>
+    <form action="/search/" method="post">
+        <input type="text" name="query" placeholder="Enter search query" required>
+        <button type="submit">Search</button>
+    </form>
+
+    <!-- Ask Question Form -->
+    <h2>Ask AI a Question</h2>
+    <form action="/ask/" method="post">
+        <input type="text" name="query" placeholder="Ask a question" required>
+        <button type="submit">Ask</button>
+    </form>
+</body>
+</html>

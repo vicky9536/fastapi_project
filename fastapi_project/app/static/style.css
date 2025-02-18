@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    color: #007BFF;
+}
+
+form {
+    margin: 20px 0;
+}
